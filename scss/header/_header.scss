@@ -1,0 +1,74 @@
+@import "../base/variables";
+@import "../base/mixins";
+
+.header{
+    padding: 5rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet{
+        min-height: 70rem;
+    }
+    
+    @include phone{
+        padding: 4rem 0;
+    }
+
+    @include tablet{
+        padding: 3rem;
+    }
+
+    @include desktop{
+        padding: 2rem;
+    }
+
+    &::before{
+
+        content: "";
+        background-color: $black;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: .6;
+    }
+    
+    .header-content{
+        position: relative;
+
+        h1{
+            text-align: center;
+            color: $white;
+            text-transform: uppercase;
+            margin-top: 5rem;
+
+            @include tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+}
+
+// Header for each page
+
+.header-inicio{
+    background-image: url(https://i.pinimg.com/originals/02/fe/62/02fe627668f0f9b589ad1d3b01ac6000.gif);
+}
+
+.header-us{
+    background-image: url(https://i.pinimg.com/originals/e7/2c/d1/e72cd1b3049474f7a2f496505a6773d2.gif);
+}
+
+.header-tutorial{
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/3f8231112980585.601eb97c041dc.gif);
+}
+
+.header-gallery{
+    background-image: url(https://64.media.tumblr.com/a4a72f471d3819344902860ac1d26eed/tumblr_pg0yx7yDkZ1uxrf48o1_640.gif);
+}
+
+.header-contact{
+    background-image: url(https://wallpaperaccess.com/full/1711593.gif);
+}
