@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,6 +18,8 @@
     family=Source+Sans+Pro:wght@700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pixelex | Inicio</title>
@@ -28,11 +30,16 @@
     <header class="header header-inicio">
       <div class="header-content container">
         <div class="nav-bar">
-            <!-- Logo -->
-          <div class="logo">
-            <img src="./img/Logo.png" alt="Logo Pixelex"/>
-          </div>
 
+          <!-- Starting logo -->
+          <div class="logo">
+            <a href="#">
+            <img src="./img/Logo.png" alt="Logo Pixelex"/>
+            </a>
+          </div>
+          <!-- Finishing logo -->
+
+          <!-- Starting nav-bar -->
           <nav class="nav-principal">
             <a class="activo" class=".activo" href="#">Inicio</a>
             <a href="./pages/nosotros.html">Nosotros</a>
@@ -40,10 +47,11 @@
             <a href="./pages/tutorial.html">Tutorial</a>
             <a href="./pages/contacto.html">Contacto</a>
           </nav>
+          <!-- Finishing nav-bar -->
         </div>
 
         <div class="text-header">
-          <h1>Bienvenidos a Pixelex Chile</h1>
+          <h1 class="animate__animated animate__zoomIn">Bienvenidos a Pixelex Chile</h1>
         </div>
       </div>
     </header>
@@ -54,34 +62,35 @@
         <h2><span>Conoce más</span> sobre nosotros</h2>
 
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non aliquam
-          deserunt alias tenetur laborum debitis iure nostrum, dolore inventore
-          rerum fugiat? Cumque, suscipit vitae expedita autem ipsa accusantium
-          reiciendis aliquid?Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Aliquid sunt corrupti dicta officia nam reprehenderit illo
-          fugiat quaerat, ad expedita ducimus veniam vero at laborum maiores
-          non, esse necessitatibus mollitia.
+          Somos Pixelex Chile, un pequeño emprendimiento de la ciudad de Santiago
+          de Chile que les trae hermosos llaveros, imánes y cuadros hechos con mucho
+          cariño y dedicación. Nuestra tienda física la pueden encontrar en la feria
+          libre en Puente alto, Santiago. Además, ofrecemos envíos a todo Chile a 
+          través de Chilexpress y Starken. Para ver más de nuestros productos pueden
+          visitar nuestras redes sociales en Instagram y TikTok como Pixelex_Chile.          
         </p>
       </section>
 
+      <!-- Starting icon-section -->
       <section class="icons">
         <ul class="icon-list">
           <li>
-            <img src="./img/img-inspirate.png" alt="" />
+            <img src="./img/img-inspirate.png" alt="img-inspirate" />
             <p>Inspírate</p>
           </li>
 
           <li>
-            <img src="./img/img-imagina.png" alt="" />
+            <img src="./img/img-imagina.png" alt="img-imagina" />
             <p>Imagina</p>
           </li>
 
           <li>
-            <img src="./img/img-crea.png" alt="" />
+            <img src="./img/img-crea.png" alt="img-crea" />
             <p>Crea</p>
           </li>
         </ul>
       </section>
+      <!-- Finishing icon-section -->
 
       <!-- Starting Gallery -->
       <section class="experience">
@@ -89,7 +98,7 @@
 
         <div class="gallery">
           <div class="image">
-            <img src="./img/img-1.png" alt="img-gallery-01" />
+            <img src="./img/img-1.png" alt="img-gallery-01"/>
           </div>
 
           <div class="image">
@@ -137,14 +146,15 @@
 
         <div class="testimonial">
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo fuga
-            harum blanditiis, dolorem cum molestiae possimus molestias
-            cupiditate nulla maxime minus ab odit voluptas obcaecati repellat ad
-            quam voluptatum hic.
+            Soy de la región del Bio Bio y hace poco les compré una figurita de 
+            Sonic hecha con hama beads de 5mm. Hoy recibí el producto y me llegó 
+            en perfecto estado. El envío fue muy rápido y los chicos de Pixelex
+            siempre contestaron muy rápido mis mensajes. Los recomiendo totalmente.
           </p>
 
-          <p class="autor">- Nombre del autor</p>
+          <p class="autor">- Fernanda Ramirez</p>
         </div>
+
       </section>
       <!-- Finishing Testimonials -->
     </main>

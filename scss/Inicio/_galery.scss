@@ -1,5 +1,7 @@
 @import "../base/mixins";
 
+// Gallery
+
 .gallery{
     @include grid(2, 2rem);
 

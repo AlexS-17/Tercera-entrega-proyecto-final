@@ -1,5 +1,7 @@
 @import "../base/variables";
 
+// Mixins
+
 @mixin phone{
     @media (min-width: $phone){
         @content;
