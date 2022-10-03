@@ -18,8 +18,11 @@
     family=Source+Sans+Pro:wght@700;900&display=swap"
       rel="stylesheet"
     />
-    <!-- Animate CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+     <!-- Bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Animate on Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Pixelex | Inicio</title>
@@ -50,30 +53,61 @@
           <!-- Finishing nav-bar -->
         </div>
 
-        <div class="text-header">
-          <h1 class="animate__animated animate__zoomIn">Bienvenidos a Pixelex Chile</h1>
+        <div class="text-header" data-aos="zoom-in">
+          <h1>Bienvenidos a Pixelex Chile</h1>
         </div>
       </div>
     </header>
     <!-- Finishing Header -->
 
     <main class="container contenido-principal text-center">
-      <section class="conoce">
-        <h2><span>Conoce más</span> sobre nosotros</h2>
 
-        <p>
-          Somos Pixelex Chile, un pequeño emprendimiento de la ciudad de Santiago
-          de Chile que les trae hermosos llaveros, imánes y cuadros hechos con mucho
-          cariño y dedicación. Nuestra tienda física la pueden encontrar en la feria
-          libre en Puente alto, Santiago. Además, ofrecemos envíos a todo Chile a 
-          través de Chilexpress y Starken. Para ver más de nuestros productos pueden
-          visitar nuestras redes sociales en Instagram y TikTok como Pixelex_Chile.          
-        </p>
-      </section>
+      <!-- Starting carousel -->
+      <section class="container mx-auto my-5 py-5">
+      
+        <div class="col">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
 
-      <!-- Starting icon-section -->
-      <section class="icons">
-        <ul class="icon-list">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./img/img-carousel-1.jpg" class="d-block w-100 h-100" alt="img-carousel-1">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/img-carousel-2.jpg" class="d-block w-100 h-100" alt="img-carousel-2">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./img/img-carousel-3.jpg" class="d-block w-100" alt="img-carousel-3">
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+     </section>
+      <!-- Finishing carousel -->
+
+       <!-- Starting icon-section -->
+       <section class="icons" data-aos="zoom-in">
+        <ul class="icon-list animate__animated animate__fadeInUp">
           <li>
             <img src="./img/img-inspirate.png" alt="img-inspirate" />
             <p>Inspírate</p>
@@ -92,71 +126,110 @@
       </section>
       <!-- Finishing icon-section -->
 
-      <!-- Starting Gallery -->
-      <section class="experience">
-        <h2><span>Mira nuestra</span> galería de imagenes</h2>
+      <!-- Starting about us section -->
+      <section class="conoce">
+        <h2><span>Conoce más</span> sobre nosotros</h2>
 
-        <div class="gallery">
-          <div class="image">
-            <img src="./img/img-1.png" alt="img-gallery-01"/>
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-2.jpg" alt="img-gallery-02" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img3.jfif" alt="img-gallery-03" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-4.jfif" alt="img-gallery-04" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-5.jfif" alt="img-gallery-05" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-6.jfif" alt="img-gallery-06" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-7.jfif" alt="img-gallery-07" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-8.PNG" alt="img-gallery-08" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-9.png" alt="img-gallery-09" />
-          </div>
-
-          <div class="image">
-            <img src="./img/img-gallery-10.PNG" alt="img-gallery-10" />
-          </div>
-        </div>
+        <p class="we-are-pixelex">
+          Somos Pixelex Chile, un pequeño emprendimiento de la ciudad de Santiago
+          de Chile que les trae hermosos llaveros, imánes y cuadros hechos con mucho
+          cariño y dedicación. Nuestra tienda física la pueden encontrar en la feria
+          libre en Puente alto, Santiago. Además, ofrecemos envíos a todo Chile a 
+          través de Chilexpress y Starken. Para ver más de nuestros productos pueden
+          visitar nuestras redes sociales en Instagram y TikTok como Pixelex_Chile.          
+        </p>
       </section>
-      <!-- Finishing Gallery -->
+      <!-- Finishing about us section -->
 
-      <!-- Starting Testimonials -->
-      <section class="our-testimonials container">
+     <!-- Starting tertimonials -->
+      <section class="container testimonials">
         <h2><span>Mira lo que dice</span> nuestra comunidad</h2>
+          <div class="testimonials-grid">
 
-        <div class="testimonial">
-          <p>
-            Soy de la región del Bio Bio y hace poco les compré una figurita de 
-            Sonic hecha con hama beads de 5mm. Hoy recibí el producto y me llegó 
-            en perfecto estado. El envío fue muy rápido y los chicos de Pixelex
-            siempre contestaron muy rápido mis mensajes. Los recomiendo totalmente.
-          </p>
+            <!-- Starting first testimonial -->
+            <div class="testimonial" data-aos="fade-right">
+              <header class="testimonial-header">
+                <div class="testimonial-img">
+                  <img src="./img/img-testimony-1.jfif" alt="img-testimony-1">
+                </div>
 
-          <p class="autor">- Fernanda Ramirez</p>
-        </div>
+                <div class="class-terstimonial-information">
+                  <p class="testimonial-author">Max Mayfield</p>
+                  <img class="testimonial-rating" src="./img/img-stars.png" alt="img-stars">
+                </div>
+              </header>
+
+              <blockquote class="testimonial-text">
+                En esta página pude encontrar unos diseños muy bonitos que me sirvieron para inspirarme 
+                y crear mis propias llaveritos, y en su cuenta de Insta también suben otros proyectos, 
+                quedé encantó.
+              </blockquote>
+            </div>
+            <!-- Finishing first testimonial -->
+
+            <!-- Starting second testimonial -->
+            <div class="testimonial" data-aos="fade-left">
+              <header class="testimonial-header">
+                <div class="testimonial-img">
+                  <img src="./img/img-testimony-2.jfif" alt="img-testimony-2">
+                </div>
+
+                <div class="class-terstimonial-information">
+                  <p class="testimonial-author">Will Byers</p>
+                  <img class="testimonial-rating" src="./img/img-stars.png" alt="img-stars">
+                </div>
+              </header>
+
+              <blockquote class="testimonial-text">
+                hace tiempo que buscaba una manera de emprender con el pixelart, esta página me sirvió
+                muchísimo para inspirarme.
+              </blockquote>
+            </div>
+            <!-- Finishing second testimonial -->
+
+            <!-- Starting third testimonial -->
+            <div class="testimonial" data-aos="fade-right">
+              <header class="testimonial-header">
+                <div class="testimonial-img">
+                  <img src="./img/img-testimony-3.png" alt="img-testimony-3">
+                </div>
+
+                <div class="class-terstimonial-information">
+                  <p class="testimonial-author">Jane Hopper</p>
+                  <img class="testimonial-rating" src="./img/img-stars.png" alt="img-stars">
+                </div>
+              </header>
+
+              <blockquote class="testimonial-text">
+                ¡Qué lindos diseños, ví una armadura de hamabeads de una chica y me encantó!.
+              </blockquote>
+            </div>
+            <!-- Finishing third testimonial -->
+
+            <!-- Starting fourth testimonial -->
+            <div class="testimonial" data-aos="fade-left">
+              <header class="testimonial-header">
+                <div class="testimonial-img">
+                  <img src="./img/img-testimony-4.jfif" alt="img-testimony-4">
+                </div>
+
+                <div class="class-terstimonial-information">
+                  <p class="testimonial-author">Lucas Sinclair</p>
+                  <img class="testimonial-rating" src="./img/img-stars.png" alt="img-stars">
+                </div>
+              </header>
+
+              <blockquote class="testimonial-text">
+                A mis hermanos chicos les encanta este tipo de arte, la verdad es muy bonito, ya
+                hemos hecho varias figuras con imánes para pegarlos en el refri, tenemos tantas
+                figuras armadas que ya no caben más jaja.
+              </blockquote>
+            </div>
+            <!-- Finishing fourth testimonial -->
+          </div>
 
       </section>
-      <!-- Finishing Testimonials -->
+      <!-- Finishing testimonials -->      
     </main>
 
     <!-- Starting Footer -->
@@ -188,5 +261,19 @@
     </footer>
     <!-- Finishing Footer -->
 
+    <!-- Link JS Animate on Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+    </script>
+
+    <!-- Link JS from Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" 
+     integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" 
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
   </body>
 </html>
