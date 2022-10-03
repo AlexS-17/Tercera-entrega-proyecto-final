@@ -338,6 +338,9 @@ ul {
   padding: 0;
   margin: 0; }
 
+strong {
+  font-weight: lighter; }
+
 ::-webkit-scrollbar {
   width: 15px; }
 
